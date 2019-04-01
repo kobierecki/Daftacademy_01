@@ -34,6 +34,23 @@ module.exports = {
           { loader: "postcss-loader", options: { sourceMap: isProduction } },
           { loader: "sass-loader", options: { sourceMap: isProduction } }
         ]
+      },
+      {
+        test: /\.html$/,
+        use: ["html-loader"]
+      },
+      {
+        test: /\.(png|jpg)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "img/",
+              publicPath: "img/"
+            }
+          }
+        ]
       }
     ]
   },
