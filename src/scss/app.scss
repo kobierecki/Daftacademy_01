@@ -1,6 +1,13 @@
 @import "base/reset";
-$red: #ff0000;
-$green: #00ff00;
-
-h1 {color: $green;}
-div {color: $green;}
+@import "base/typography";
+@import "abstracts/variable";
+@import "layout/body";
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
+@import "components/drinks-display";
+@import "components/drinks-navigation";
+@import "components/scrollbar";
+@import "components/logo";
+@import "components/email";
+@import "components/social-media";

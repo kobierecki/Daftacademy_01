@@ -1,0 +1,30 @@
+.drinks-display {
+  max-width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-height: 600px;
+  overflow: auto;
+  &__container {
+    position: relative;
+    padding: 10%;
+  }
+  &__image {
+    max-width: 100%;
+    &--active{
+      border: 10px solid $shortbread;
+    }
+  }
+  &__caption{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.5rem;
+    text-align: center;
+    color: $white;
+  }
+}
+
+
+
